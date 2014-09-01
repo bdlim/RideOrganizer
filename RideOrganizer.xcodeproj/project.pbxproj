@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C460C319B532FE001272A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C219B532FE001272A1 /* Foundation.framework */; };
+		89C460C519B532FE001272A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C419B532FE001272A1 /* CoreGraphics.framework */; };
+		89C460C719B532FE001272A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C619B532FE001272A1 /* UIKit.framework */; };
+		89C460CD19B532FE001272A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C460CB19B532FE001272A1 /* InfoPlist.strings */; };
+		89C460CF19B532FE001272A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460CE19B532FE001272A1 /* main.m */; };
+		89C460D319B532FE001272A1 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460D219B532FE001272A1 /* BLAppDelegate.m */; };
+		89C460D619B532FE001272A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C460D419B532FE001272A1 /* Main.storyboard */; };
+		89C460D919B532FE001272A1 /* BLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460D819B532FE001272A1 /* BLFirstViewController.m */; };
+		89C460DC19B532FE001272A1 /* BLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460DB19B532FE001272A1 /* BLSecondViewController.m */; };
+		89C460DE19B532FE001272A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C460DD19B532FE001272A1 /* Images.xcassets */; };
+		89C460E519B532FE001272A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460E419B532FE001272A1 /* XCTest.framework */; };
+		89C460E619B532FE001272A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C219B532FE001272A1 /* Foundation.framework */; };
+		89C460E719B532FE001272A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C619B532FE001272A1 /* UIKit.framework */; };
+		89C460EF19B532FE001272A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C460ED19B532FE001272A1 /* InfoPlist.strings */; };
+		89C460F119B532FE001272A1 /* RideOrganizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460F019B532FE001272A1 /* RideOrganizerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89C460E819B532FE001272A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89C460B719B532FE001272A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89C460BE19B532FE001272A1;
+			remoteInfo = RideOrganizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89C460BF19B532FE001272A1 /* RideOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C460C219B532FE001272A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89C460C419B532FE001272A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89C460C619B532FE001272A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89C460CA19B532FE001272A1 /* RideOrganizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RideOrganizer-Info.plist"; sourceTree = "<group>"; };
+		89C460CC19B532FE001272A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89C460CE19B532FE001272A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89C460D019B532FE001272A1 /* RideOrganizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RideOrganizer-Prefix.pch"; sourceTree = "<group>"; };
+		89C460D119B532FE001272A1 /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
+		89C460D219B532FE001272A1 /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
+		89C460D519B532FE001272A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89C460D719B532FE001272A1 /* BLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFirstViewController.h; sourceTree = "<group>"; };
+		89C460D819B532FE001272A1 /* BLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFirstViewController.m; sourceTree = "<group>"; };
+		89C460DA19B532FE001272A1 /* BLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSecondViewController.h; sourceTree = "<group>"; };
+		89C460DB19B532FE001272A1 /* BLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSecondViewController.m; sourceTree = "<group>"; };
+		89C460DD19B532FE001272A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		89C460E319B532FE001272A1 /* RideOrganizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideOrganizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C460E419B532FE001272A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		89C460EC19B532FE001272A1 /* RideOrganizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RideOrganizerTests-Info.plist"; sourceTree = "<group>"; };
+		89C460EE19B532FE001272A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89C460F019B532FE001272A1 /* RideOrganizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideOrganizerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C460BC19B532FE001272A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460C519B532FE001272A1 /* CoreGraphics.framework in Frameworks */,
+				89C460C719B532FE001272A1 /* UIKit.framework in Frameworks */,
+				89C460C319B532FE001272A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C460E019B532FE001272A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460E519B532FE001272A1 /* XCTest.framework in Frameworks */,
+				89C460E719B532FE001272A1 /* UIKit.framework in Frameworks */,
+				89C460E619B532FE001272A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C460B619B532FE001272A1 = {
+			isa = PBXGroup;
+			children = (
+				89C460C819B532FE001272A1 /* RideOrganizer */,
+				89C460EA19B532FE001272A1 /* RideOrganizerTests */,
+				89C460C119B532FE001272A1 /* Frameworks */,
+				89C460C019B532FE001272A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C460C019B532FE001272A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C460BF19B532FE001272A1 /* RideOrganizer.app */,
+				89C460E319B532FE001272A1 /* RideOrganizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C460C119B532FE001272A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C460C219B532FE001272A1 /* Foundation.framework */,
+				89C460C419B532FE001272A1 /* CoreGraphics.framework */,
+				89C460C619B532FE001272A1 /* UIKit.framework */,
+				89C460E419B532FE001272A1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89C460C819B532FE001272A1 /* RideOrganizer */ = {
+			isa = PBXGroup;
+			children = (
+				89C460D119B532FE001272A1 /* BLAppDelegate.h */,
+				89C460D219B532FE001272A1 /* BLAppDelegate.m */,
+				89C460D419B532FE001272A1 /* Main.storyboard */,
+				89C460D719B532FE001272A1 /* BLFirstViewController.h */,
+				89C460D819B532FE001272A1 /* BLFirstViewController.m */,
+				89C460DA19B532FE001272A1 /* BLSecondViewController.h */,
+				89C460DB19B532FE001272A1 /* BLSecondViewController.m */,
+				89C460DD19B532FE001272A1 /* Images.xcassets */,
+				89C460C919B532FE001272A1 /* Supporting Files */,
+			);
+			path = RideOrganizer;
+			sourceTree = "<group>";
+		};
+		89C460C919B532FE001272A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C460CA19B532FE001272A1 /* RideOrganizer-Info.plist */,
+				89C460CB19B532FE001272A1 /* InfoPlist.strings */,
+				89C460CE19B532FE001272A1 /* main.m */,
+				89C460D019B532FE001272A1 /* RideOrganizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89C460EA19B532FE001272A1 /* RideOrganizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				89C460F019B532FE001272A1 /* RideOrganizerTests.m */,
+				89C460EB19B532FE001272A1 /* Supporting Files */,
+			);
+			path = RideOrganizerTests;
+			sourceTree = "<group>";
+		};
+		89C460EB19B532FE001272A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C460EC19B532FE001272A1 /* RideOrganizerTests-Info.plist */,
+				89C460ED19B532FE001272A1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89C460BE19B532FE001272A1 /* RideOrganizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C460F419B532FE001272A1 /* Build configuration list for PBXNativeTarget "RideOrganizer" */;
+			buildPhases = (
+				89C460BB19B532FE001272A1 /* Sources */,
+				89C460BC19B532FE001272A1 /* Frameworks */,
+				89C460BD19B532FE001272A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RideOrganizer;
+			productName = RideOrganizer;
+			productReference = 89C460BF19B532FE001272A1 /* RideOrganizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89C460E219B532FE001272A1 /* RideOrganizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C460F719B532FE001272A1 /* Build configuration list for PBXNativeTarget "RideOrganizerTests" */;
+			buildPhases = (
+				89C460DF19B532FE001272A1 /* Sources */,
+				89C460E019B532FE001272A1 /* Frameworks */,
+				89C460E119B532FE001272A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89C460E919B532FE001272A1 /* PBXTargetDependency */,
+			);
+			name = RideOrganizerTests;
+			productName = RideOrganizerTests;
+			productReference = 89C460E319B532FE001272A1 /* RideOrganizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C460B719B532FE001272A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Brandon;
+				TargetAttributes = {
+					89C460E219B532FE001272A1 = {
+						TestTargetID = 89C460BE19B532FE001272A1;
+					};
+				};
+			};
+			buildConfigurationList = 89C460BA19B532FE001272A1 /* Build configuration list for PBXProject "RideOrganizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89C460B619B532FE001272A1;
+			productRefGroup = 89C460C019B532FE001272A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C460BE19B532FE001272A1 /* RideOrganizer */,
+				89C460E219B532FE001272A1 /* RideOrganizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89C460BD19B532FE001272A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460DE19B532FE001272A1 /* Images.xcassets in Resources */,
+				89C460CD19B532FE001272A1 /* InfoPlist.strings in Resources */,
+				89C460D619B532FE001272A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C460E119B532FE001272A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460EF19B532FE001272A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C460BB19B532FE001272A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460DC19B532FE001272A1 /* BLSecondViewController.m in Sources */,
+				89C460D319B532FE001272A1 /* BLAppDelegate.m in Sources */,
+				89C460D919B532FE001272A1 /* BLFirstViewController.m in Sources */,
+				89C460CF19B532FE001272A1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89C460DF19B532FE001272A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C460F119B532FE001272A1 /* RideOrganizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89C460E919B532FE001272A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89C460BE19B532FE001272A1 /* RideOrganizer */;
+			targetProxy = 89C460E819B532FE001272A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89C460CB19B532FE001272A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C460CC19B532FE001272A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89C460D419B532FE001272A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C460D519B532FE001272A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89C460ED19B532FE001272A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C460EE19B532FE001272A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89C460F219B532FE001272A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89C460F319B532FE001272A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89C460F519B532FE001272A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RideOrganizer/RideOrganizer-Prefix.pch";
+				INFOPLIST_FILE = "RideOrganizer/RideOrganizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89C460F619B532FE001272A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RideOrganizer/RideOrganizer-Prefix.pch";
+				INFOPLIST_FILE = "RideOrganizer/RideOrganizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		89C460F819B532FE001272A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RideOrganizer.app/RideOrganizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RideOrganizer/RideOrganizer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RideOrganizerTests/RideOrganizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		89C460F919B532FE001272A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RideOrganizer.app/RideOrganizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RideOrganizer/RideOrganizer-Prefix.pch";
+				INFOPLIST_FILE = "RideOrganizerTests/RideOrganizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C460BA19B532FE001272A1 /* Build configuration list for PBXProject "RideOrganizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C460F219B532FE001272A1 /* Debug */,
+				89C460F319B532FE001272A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C460F419B532FE001272A1 /* Build configuration list for PBXNativeTarget "RideOrganizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C460F519B532FE001272A1 /* Debug */,
+				89C460F619B532FE001272A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89C460F719B532FE001272A1 /* Build configuration list for PBXNativeTarget "RideOrganizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C460F819B532FE001272A1 /* Debug */,
+				89C460F919B532FE001272A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C460B719B532FE001272A1 /* Project object */;
+}
