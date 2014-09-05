@@ -1,19 +1,19 @@
 //
-//  BLFirstViewController.m
+//  BLMapViewController.m
 //  RideOrganizer
 //
 //  Created by Brandon Lim on 9/1/14.
 //  Copyright (c) 2014 Brandon. All rights reserved.
 //
 
-#import "BLFirstViewController.h"
+#import "BLMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface BLFirstViewController ()
+@interface BLMapViewController ()
 
 @end
 
-@implementation BLFirstViewController {
+@implementation BLMapViewController {
     GMSMapView *mapView_;
 }
 

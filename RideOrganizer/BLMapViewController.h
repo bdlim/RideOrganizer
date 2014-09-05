@@ -1,5 +1,5 @@
 //
-//  BLSecondViewController.h
+//  BLMapViewController.h
 //  RideOrganizer
 //
 //  Created by Brandon Lim on 9/1/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLSecondViewController : UIViewController
+@interface BLMapViewController : UIViewController
 
 @end

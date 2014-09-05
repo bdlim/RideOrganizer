@@ -27,8 +27,7 @@
 		89C460CF19B532FE001272A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460CE19B532FE001272A1 /* main.m */; };
 		89C460D319B532FE001272A1 /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460D219B532FE001272A1 /* BLAppDelegate.m */; };
 		89C460D619B532FE001272A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C460D419B532FE001272A1 /* Main.storyboard */; };
-		89C460D919B532FE001272A1 /* BLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460D819B532FE001272A1 /* BLFirstViewController.m */; };
-		89C460DC19B532FE001272A1 /* BLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460DB19B532FE001272A1 /* BLSecondViewController.m */; };
+		89C460D919B532FE001272A1 /* BLMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460D819B532FE001272A1 /* BLMapViewController.m */; };
 		89C460DE19B532FE001272A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C460DD19B532FE001272A1 /* Images.xcassets */; };
 		89C460E519B532FE001272A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460E419B532FE001272A1 /* XCTest.framework */; };
 		89C460E619B532FE001272A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C219B532FE001272A1 /* Foundation.framework */; };
@@ -73,10 +72,8 @@
 		89C460D119B532FE001272A1 /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
 		89C460D219B532FE001272A1 /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
 		89C460D519B532FE001272A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		89C460D719B532FE001272A1 /* BLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLFirstViewController.h; sourceTree = "<group>"; };
-		89C460D819B532FE001272A1 /* BLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLFirstViewController.m; sourceTree = "<group>"; };
-		89C460DA19B532FE001272A1 /* BLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLSecondViewController.h; sourceTree = "<group>"; };
-		89C460DB19B532FE001272A1 /* BLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLSecondViewController.m; sourceTree = "<group>"; };
+		89C460D719B532FE001272A1 /* BLMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLMapViewController.h; sourceTree = "<group>"; };
+		89C460D819B532FE001272A1 /* BLMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLMapViewController.m; sourceTree = "<group>"; };
 		89C460DD19B532FE001272A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89C460E319B532FE001272A1 /* RideOrganizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideOrganizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C460E419B532FE001272A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -173,10 +170,8 @@
 				89C460D119B532FE001272A1 /* BLAppDelegate.h */,
 				89C460D219B532FE001272A1 /* BLAppDelegate.m */,
 				89C460D419B532FE001272A1 /* Main.storyboard */,
-				89C460D719B532FE001272A1 /* BLFirstViewController.h */,
-				89C460D819B532FE001272A1 /* BLFirstViewController.m */,
-				89C460DA19B532FE001272A1 /* BLSecondViewController.h */,
-				89C460DB19B532FE001272A1 /* BLSecondViewController.m */,
+				89C460D719B532FE001272A1 /* BLMapViewController.h */,
+				89C460D819B532FE001272A1 /* BLMapViewController.m */,
 				89C460DD19B532FE001272A1 /* Images.xcassets */,
 				89C460C919B532FE001272A1 /* Supporting Files */,
 			);
@@ -311,9 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C460DC19B532FE001272A1 /* BLSecondViewController.m in Sources */,
 				89C460D319B532FE001272A1 /* BLAppDelegate.m in Sources */,
-				89C460D919B532FE001272A1 /* BLFirstViewController.m in Sources */,
+				89C460D919B532FE001272A1 /* BLMapViewController.m in Sources */,
 				89C460CF19B532FE001272A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
