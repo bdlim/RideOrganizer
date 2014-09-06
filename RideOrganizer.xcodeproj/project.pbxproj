@@ -21,7 +21,6 @@
 		8943E01119B94FF50078DEF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8943E00519B94FF50078DEF1 /* SystemConfiguration.framework */; };
 		8943E09819B977080078DEF1 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8943E09719B977080078DEF1 /* GoogleMaps.bundle */; };
 		8943E0DF19BA84980078DEF1 /* BLGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */; };
-		8943E0E219BA84A90078DEF1 /* BLFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8943E0E119BA84A90078DEF1 /* BLFriendsTableViewController.m */; };
 		89C460C319B532FE001272A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C219B532FE001272A1 /* Foundation.framework */; };
 		89C460C519B532FE001272A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C419B532FE001272A1 /* CoreGraphics.framework */; };
 		89C460C719B532FE001272A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C619B532FE001272A1 /* UIKit.framework */; };
@@ -65,8 +64,6 @@
 		8943E09719B977080078DEF1 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		8943E0DD19BA84980078DEF1 /* BLGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGroupsTableViewController.h; sourceTree = "<group>"; };
 		8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGroupsTableViewController.m; sourceTree = "<group>"; };
-		8943E0E019BA84A90078DEF1 /* BLFriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFriendsTableViewController.h; sourceTree = "<group>"; };
-		8943E0E119BA84A90078DEF1 /* BLFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFriendsTableViewController.m; sourceTree = "<group>"; };
 		89C460BF19B532FE001272A1 /* RideOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C460C219B532FE001272A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89C460C419B532FE001272A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,8 +177,6 @@
 				89C460D819B532FE001272A1 /* BLMapViewController.m */,
 				8943E0DD19BA84980078DEF1 /* BLGroupsTableViewController.h */,
 				8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */,
-				8943E0E019BA84A90078DEF1 /* BLFriendsTableViewController.h */,
-				8943E0E119BA84A90078DEF1 /* BLFriendsTableViewController.m */,
 				89C460DD19B532FE001272A1 /* Images.xcassets */,
 				89C460C919B532FE001272A1 /* Supporting Files */,
 			);
@@ -320,7 +315,6 @@
 				8943E0DF19BA84980078DEF1 /* BLGroupsTableViewController.m in Sources */,
 				89C460D919B532FE001272A1 /* BLMapViewController.m in Sources */,
 				89C460CF19B532FE001272A1 /* main.m in Sources */,
-				8943E0E219BA84A90078DEF1 /* BLFriendsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
