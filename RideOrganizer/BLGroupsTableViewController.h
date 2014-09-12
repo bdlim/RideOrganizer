@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLGroupsTableViewCell.h"
 
-@interface BLGroupsTableViewController : UITableViewController
+@interface BLGroupsTableViewController : UITableViewController <SWTableViewCellDelegate>
+
+@property (nonatomic, strong) NSArray *groups;
 
 @end
