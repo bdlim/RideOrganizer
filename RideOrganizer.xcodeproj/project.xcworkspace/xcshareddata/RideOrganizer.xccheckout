@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>057A5B60-0108-45B9-9510-1C1DEB80D589</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RideOrganizer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C40466B1-FE7B-4FE8-943E-E357881F7AB2</key>
+		<string>https://github.com/bdlim/RideOrganizer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RideOrganizer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C40466B1-FE7B-4FE8-943E-E357881F7AB2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bdlim/RideOrganizer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C40466B1-FE7B-4FE8-943E-E357881F7AB2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C40466B1-FE7B-4FE8-943E-E357881F7AB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RideOrganizer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
