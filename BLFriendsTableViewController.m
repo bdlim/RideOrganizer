@@ -1,18 +1,18 @@
 //
-//  BLGroupsTableViewController.m
+//  BLFriendsTableViewController.m
 //  RideOrganizer
 //
-//  Created by Brandon Lim on 9/5/14.
+//  Created by Brandon Lim on 9/12/14.
 //  Copyright (c) 2014 Brandon. All rights reserved.
 //
 
-#import "BLGroupsTableViewController.h"
+#import "BLFriendsTableViewController.h"
 
-@interface BLGroupsTableViewController ()
+@interface BLFriendsTableViewController ()
 
 @end
 
-@implementation BLGroupsTableViewController
+@implementation BLFriendsTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -34,12 +34,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    self.sharedGroupManager = [BLGroupManager sharedGroups];
-    [super viewDidAppear:animated];
-    [self.tableView reloadData];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -50,72 +44,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.sharedGroupManager.groups count];
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"Cell";
-    
-    BLGroupsTableViewCell *cell = (BLGroupsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-    // Add utility buttons
-    NSMutableArray *rightUtilityButtons = [NSMutableArray new];
-    
-    [rightUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                title:@"Edit"];
-    [rightUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:0.231f blue:0.188 alpha:1.0f]
-                                                title:@"Delete"];
-    
-    cell.rightUtilityButtons = rightUtilityButtons;
-    cell.delegate = self;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
-    BLGroupManager *sharedGroupManager = [BLGroupManager sharedGroups];
-    BLGroup *group = (BLGroup *)[sharedGroupManager.groups objectAtIndex:indexPath.row];
-    cell.textLabel.text = group.groupName;
-    
     return cell;
-    
 }
-
-- (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
-    switch (index) {
-        case 0:
-        {
-            // Edit button is pressed
-            NSLog(@"Edit Button Pressed");
-            
-            [self performSegueWithIdentifier:@"editGroup" sender:self];
-            
-            [cell hideUtilityButtonsAnimated:YES];
-            break;
-        }
-        case 1:
-        {
-            // Delete button is pressed
-            NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
-            [self.sharedGroupManager.groups removeObjectAtIndex:cellIndexPath.row];
-            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
-            break;
-        }
-        default:
-            break;
-    }
-}
-
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -155,7 +105,7 @@
 }
 */
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -163,11 +113,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier isEqualToString:@"editGroup"]) {
-        
-    }
 }
-
-
+*/
 
 @end
