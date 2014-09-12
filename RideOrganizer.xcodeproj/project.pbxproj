@@ -21,6 +21,7 @@
 		8943E01119B94FF50078DEF1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8943E00519B94FF50078DEF1 /* SystemConfiguration.framework */; };
 		8943E09819B977080078DEF1 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8943E09719B977080078DEF1 /* GoogleMaps.bundle */; };
 		8943E0DF19BA84980078DEF1 /* BLGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */; };
+		8948890A19C3AD0500FAD773 /* BLGroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948890919C3AD0500FAD773 /* BLGroupManager.m */; };
 		8950F78B19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78019C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m */; };
 		8950F78C19C27BCD00F44E81 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78219C27BCD00F44E81 /* SWCellScrollView.m */; };
 		8950F78D19C27BCD00F44E81 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78419C27BCD00F44E81 /* SWLongPressGestureRecognizer.m */; };
@@ -74,6 +75,8 @@
 		8943E09719B977080078DEF1 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		8943E0DD19BA84980078DEF1 /* BLGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGroupsTableViewController.h; sourceTree = "<group>"; };
 		8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGroupsTableViewController.m; sourceTree = "<group>"; };
+		8948890819C3AD0500FAD773 /* BLGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGroupManager.h; sourceTree = "<group>"; };
+		8948890919C3AD0500FAD773 /* BLGroupManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGroupManager.m; sourceTree = "<group>"; };
 		8950F77F19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
 		8950F78019C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
 		8950F78119C27BCD00F44E81 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				8950F79219C27C5800F44E81 /* BLGroupsTableViewCell.m */,
 				89FB218F19C2BC7B00DDD72A /* BLNewGroupViewController.h */,
 				89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */,
+				8948890819C3AD0500FAD773 /* BLGroupManager.h */,
+				8948890919C3AD0500FAD773 /* BLGroupManager.m */,
 				8950F79719C286C900F44E81 /* BLGroup.h */,
 				8950F79819C286C900F44E81 /* BLGroup.m */,
 				8950F79419C2802700F44E81 /* BLFriend.h */,
@@ -374,6 +379,7 @@
 				89FB219119C2BC7B00DDD72A /* BLNewGroupViewController.m in Sources */,
 				8950F78E19C27BCD00F44E81 /* SWTableViewCell.m in Sources */,
 				8950F78D19C27BCD00F44E81 /* SWLongPressGestureRecognizer.m in Sources */,
+				8948890A19C3AD0500FAD773 /* BLGroupManager.m in Sources */,
 				8950F79619C2802700F44E81 /* BLFriend.m in Sources */,
 				8950F79319C27C5800F44E81 /* BLGroupsTableViewCell.m in Sources */,
 				8950F78B19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m in Sources */,

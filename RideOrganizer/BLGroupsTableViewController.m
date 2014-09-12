@@ -32,14 +32,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    BLGroup *object1 = [[BLGroup alloc]initWithName:@"Hello"];
-    BLGroup *object2 = [[BLGroup alloc]initWithName:@"Greetings"];
-    self.groups = [[NSMutableArray alloc]initWithObjects:object1, object2, nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
+    self.sharedGroupManager = [BLGroupManager sharedGroups];
     [super viewDidAppear:animated];
-    NSLog(@"Array: %@", self.groups);
+    NSLog(@"Array: %@", self.sharedGroupManager.groups);
     [self.tableView reloadData];
 }
 
@@ -60,7 +58,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.groups count];
+    return [self.sharedGroupManager.groups count];
 }
 
 
@@ -85,7 +83,8 @@
     
     // Configure the cell...
     
-    BLGroup *group = (BLGroup *)[self.groups objectAtIndex:indexPath.row];
+    BLGroupManager *sharedGroupManager = [BLGroupManager sharedGroups];
+    BLGroup *group = (BLGroup *)[sharedGroupManager.groups objectAtIndex:indexPath.row];
     cell.textLabel.text = group.groupName;
     
     return cell;
@@ -106,7 +105,7 @@
         {
             // Delete button is pressed
             NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
-            [self.groups removeObjectAtIndex:cellIndexPath.row];
+            [self.sharedGroupManager.groups removeObjectAtIndex:cellIndexPath.row];
             [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
             break;
         }
@@ -157,24 +156,14 @@
 
 
 #pragma mark - Navigation
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([segue.identifier  isEqualToString:@"addNew"]) {
-        BLNewGroupViewController *newGroupViewController = (BLNewGroupViewController *)segue.destinationViewController;
-        newGroupViewController.group = [[NSMutableArray alloc]initWithArray:self.groups];
-        newGroupViewController.delegate = self;
-    }
 }
-
-#pragma mark - Helper Methods
-- (void)addGroupViewController:(BLNewGroupViewController *)controller didFinishEnteringGroup:(BLGroup *)group {
-    [self.groups addObject:group];
-    [self.tableView reloadData];
-}
+*/
 
 
 @end

@@ -8,17 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BLGroup.h"
-
-@class BLNewGroupViewController;
-
-@protocol BLNewGroupViewControllerDelegate <NSObject>
-- (void)addGroupViewController:(BLNewGroupViewController *)controller didFinishEnteringGroup:(BLGroup *)group;
-@end
+#import "BLGroupManager.h"
 
 @interface BLNewGroupViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *groupName;
 @property (strong, nonatomic) NSMutableArray *group;
-@property (nonatomic, weak) id <BLNewGroupViewControllerDelegate> delegate;
 
 - (IBAction)addGroup:(id)sender;
 

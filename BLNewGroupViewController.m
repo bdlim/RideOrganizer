@@ -14,8 +14,6 @@
 
 @implementation BLNewGroupViewController
 
-@synthesize delegate;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -56,7 +54,8 @@
         [alertView show];
     } else {
         BLGroup *newObject = [[BLGroup alloc]initWithName:name];
-        [self.delegate addGroupViewController:self didFinishEnteringGroup:newObject];
+        BLGroupManager *sharedGroupManager = [BLGroupManager sharedGroups];
+        [sharedGroupManager.groups addObject:newObject];
         [self.navigationController popViewControllerAnimated:YES];
     }
     

@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "BLGroupsTableViewCell.h"
-#import "BLNewGroupViewController.h"
 #import "BLGroup.h"
+#import "BLGroupManager.h"
 
 
-@interface BLGroupsTableViewController : UITableViewController <SWTableViewCellDelegate, BLNewGroupViewControllerDelegate>
+@interface BLGroupsTableViewController : UITableViewController <SWTableViewCellDelegate>
 
-@property (nonatomic, strong) NSMutableArray *groups;
+@property (nonatomic, strong) BLGroupManager *sharedGroupManager;
 
 @end
