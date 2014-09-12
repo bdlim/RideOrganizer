@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="315" y="498"/>
         </scene>
-        <!--View Controller - NewGroup-->
+        <!--New Group View Controller - NewGroup-->
         <scene sceneID="jcP-EX-LAV">
             <objects>
-                <viewController title="NewGroup" id="tl6-lX-2bh" sceneMemberID="viewController">
+                <viewController title="NewGroup" id="tl6-lX-2bh" customClass="BLNewGroupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Clu-HX-NS1"/>
                         <viewControllerLayoutGuide type="bottom" id="QJ7-fL-cpq"/>
@@ -41,9 +41,31 @@
                     <view key="view" contentMode="scaleToFill" id="hOe-e9-VsP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Group Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-5Y-gzW">
+                                <rect key="frame" x="20" y="142" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3q-TV-HBc">
+                                <rect key="frame" x="123" y="189" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Group">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addGroup:" destination="tl6-lX-2bh" eventType="touchUpInside" id="s1R-eu-seN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Group" id="Hjk-IF-glu"/>
+                    <connections>
+                        <outlet property="groupName" destination="4xp-5Y-gzW" id="ZQr-IF-Kxy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dC-I0-6fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +97,7 @@
                     <navigationItem key="navigationItem" title="Groups" id="9NH-EG-KyP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="fgz-NP-6EQ">
                             <connections>
-                                <segue destination="tl6-lX-2bh" kind="push" id="pKg-d6-KXg"/>
+                                <segue destination="tl6-lX-2bh" kind="push" identifier="addNew" id="pKg-d6-KXg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

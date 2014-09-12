@@ -45,6 +45,7 @@
 		89C460EF19B532FE001272A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C460ED19B532FE001272A1 /* InfoPlist.strings */; };
 		89C460F119B532FE001272A1 /* RideOrganizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460F019B532FE001272A1 /* RideOrganizerTests.m */; };
 		89C460FB19B5352B001272A1 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460FA19B5352B001272A1 /* GoogleMaps.framework */; };
+		89FB219119C2BC7B00DDD72A /* BLNewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		89C460EE19B532FE001272A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89C460F019B532FE001272A1 /* RideOrganizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideOrganizerTests.m; sourceTree = "<group>"; };
 		89C460FA19B5352B001272A1 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		89FB218F19C2BC7B00DDD72A /* BLNewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLNewGroupViewController.h; path = ../BLNewGroupViewController.h; sourceTree = "<group>"; };
+		89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLNewGroupViewController.m; path = ../BLNewGroupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */,
 				8950F79119C27C5800F44E81 /* BLGroupsTableViewCell.h */,
 				8950F79219C27C5800F44E81 /* BLGroupsTableViewCell.m */,
+				89FB218F19C2BC7B00DDD72A /* BLNewGroupViewController.h */,
+				89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */,
 				8950F79719C286C900F44E81 /* BLGroup.h */,
 				8950F79819C286C900F44E81 /* BLGroup.m */,
 				8950F79419C2802700F44E81 /* BLFriend.h */,
@@ -366,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C460D319B532FE001272A1 /* BLAppDelegate.m in Sources */,
+				89FB219119C2BC7B00DDD72A /* BLNewGroupViewController.m in Sources */,
 				8950F78E19C27BCD00F44E81 /* SWTableViewCell.m in Sources */,
 				8950F78D19C27BCD00F44E81 /* SWLongPressGestureRecognizer.m in Sources */,
 				8950F79619C2802700F44E81 /* BLFriend.m in Sources */,

@@ -12,6 +12,7 @@
 
 - (id)initWithName:(NSString *)groupName {
     self = [super init];
+    self.friends = [[NSMutableArray alloc]init];
     self.groupName = groupName;
     return self;
 }

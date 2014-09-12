@@ -7,7 +7,6 @@
 //
 
 #import "BLGroupsTableViewController.h"
-#import "BLGroup.h"
 
 @interface BLGroupsTableViewController ()
 
@@ -38,6 +37,12 @@
     self.groups = [[NSMutableArray alloc]initWithObjects:object1, object2, nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"Array: %@", self.groups);
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -66,30 +71,15 @@
     BLGroupsTableViewCell *cell = (BLGroupsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Add utility buttons
-    NSMutableArray *leftUtilityButtons = [NSMutableArray new];
     NSMutableArray *rightUtilityButtons = [NSMutableArray new];
-    
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:0.7]
-                                                icon:[UIImage imageNamed:@"like.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:0.7]
-                                                icon:[UIImage imageNamed:@"message.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:0.7]
-                                                icon:[UIImage imageNamed:@"facebook.png"]];
-    [leftUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:1.0f blue:0.35f alpha:0.7]
-                                                icon:[UIImage imageNamed:@"twitter.png"]];
     
     [rightUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                title:@"More"];
+                                                title:@"Edit"];
     [rightUtilityButtons sw_addUtilityButtonWithColor:
      [UIColor colorWithRed:1.0f green:0.231f blue:0.188 alpha:1.0f]
                                                 title:@"Delete"];
     
-    cell.leftUtilityButtons = leftUtilityButtons;
     cell.rightUtilityButtons = rightUtilityButtons;
     cell.delegate = self;
     
@@ -101,6 +91,30 @@
     return cell;
     
 }
+
+- (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
+    switch (index) {
+        case 0:
+        {
+            // Edit button is pressed
+            NSLog(@"Edit Button Pressed");
+            
+            [cell hideUtilityButtonsAnimated:YES];
+            break;
+        }
+        case 1:
+        {
+            // Delete button is pressed
+            NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+            [self.groups removeObjectAtIndex:cellIndexPath.row];
+            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
 
 
 /*
@@ -141,7 +155,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -149,7 +163,18 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier  isEqualToString:@"addNew"]) {
+        BLNewGroupViewController *newGroupViewController = (BLNewGroupViewController *)segue.destinationViewController;
+        newGroupViewController.group = [[NSMutableArray alloc]initWithArray:self.groups];
+        newGroupViewController.delegate = self;
+    }
 }
-*/
+
+#pragma mark - Helper Methods
+- (void)addGroupViewController:(BLNewGroupViewController *)controller didFinishEnteringGroup:(BLGroup *)group {
+    [self.groups addObject:group];
+    [self.tableView reloadData];
+}
+
 
 @end
