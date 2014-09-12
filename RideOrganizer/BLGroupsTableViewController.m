@@ -7,6 +7,7 @@
 //
 
 #import "BLGroupsTableViewController.h"
+#import "BLGroup.h"
 
 @interface BLGroupsTableViewController ()
 
@@ -26,13 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.groups = [[NSArray alloc]init];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    BLGroup *object1 = [[BLGroup alloc]initWithName:@"Hello"];
+    BLGroup *object2 = [[BLGroup alloc]initWithName:@"Greetings"];
+    self.groups = [[NSMutableArray alloc]initWithObjects:object1, object2, nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,7 +94,9 @@
     cell.delegate = self;
     
     // Configure the cell...
-    cell.textLabel.text = [self.groups objectAtIndex:indexPath.row];
+    
+    BLGroup *group = (BLGroup *)[self.groups objectAtIndex:indexPath.row];
+    cell.textLabel.text = group.groupName;
     
     return cell;
     

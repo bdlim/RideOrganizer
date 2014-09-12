@@ -11,6 +11,6 @@
 
 @interface BLGroupsTableViewController : UITableViewController <SWTableViewCellDelegate>
 
-@property (nonatomic, strong) NSArray *groups;
+@property (nonatomic, strong) NSMutableArray *groups;
 
 @end

@@ -10,4 +10,13 @@
 
 @interface BLFriend : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *status;
+@property (nonatomic, strong) NSString *phoneNumber;
+@property (nonatomic, strong) NSDictionary *geocode;
+
+
+- (id)init;
+- (void)geocodeAddress:(NSString *)address;
+
 @end

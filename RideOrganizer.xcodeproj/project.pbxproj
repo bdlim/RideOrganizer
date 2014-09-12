@@ -29,6 +29,7 @@
 		8950F79019C27BCD00F44E81 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78A19C27BCD00F44E81 /* SWUtilityButtonView.m */; };
 		8950F79319C27C5800F44E81 /* BLGroupsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F79219C27C5800F44E81 /* BLGroupsTableViewCell.m */; };
 		8950F79619C2802700F44E81 /* BLFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F79519C2802700F44E81 /* BLFriend.m */; };
+		8950F79919C286C900F44E81 /* BLGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F79819C286C900F44E81 /* BLGroup.m */; };
 		89C460C319B532FE001272A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C219B532FE001272A1 /* Foundation.framework */; };
 		89C460C519B532FE001272A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C419B532FE001272A1 /* CoreGraphics.framework */; };
 		89C460C719B532FE001272A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460C619B532FE001272A1 /* UIKit.framework */; };
@@ -88,6 +89,8 @@
 		8950F79219C27C5800F44E81 /* BLGroupsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGroupsTableViewCell.m; sourceTree = "<group>"; };
 		8950F79419C2802700F44E81 /* BLFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFriend.h; sourceTree = "<group>"; };
 		8950F79519C2802700F44E81 /* BLFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFriend.m; sourceTree = "<group>"; };
+		8950F79719C286C900F44E81 /* BLGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGroup.h; sourceTree = "<group>"; };
+		8950F79819C286C900F44E81 /* BLGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGroup.m; sourceTree = "<group>"; };
 		89C460BF19B532FE001272A1 /* RideOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C460C219B532FE001272A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89C460C419B532FE001272A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -224,6 +227,8 @@
 				8943E0DE19BA84980078DEF1 /* BLGroupsTableViewController.m */,
 				8950F79119C27C5800F44E81 /* BLGroupsTableViewCell.h */,
 				8950F79219C27C5800F44E81 /* BLGroupsTableViewCell.m */,
+				8950F79719C286C900F44E81 /* BLGroup.h */,
+				8950F79819C286C900F44E81 /* BLGroup.m */,
 				8950F79419C2802700F44E81 /* BLFriend.h */,
 				8950F79519C2802700F44E81 /* BLFriend.m */,
 				89C460DD19B532FE001272A1 /* Images.xcassets */,
@@ -369,6 +374,7 @@
 				8943E0DF19BA84980078DEF1 /* BLGroupsTableViewController.m in Sources */,
 				8950F78C19C27BCD00F44E81 /* SWCellScrollView.m in Sources */,
 				89C460D919B532FE001272A1 /* BLMapViewController.m in Sources */,
+				8950F79919C286C900F44E81 /* BLGroup.m in Sources */,
 				8950F79019C27BCD00F44E81 /* SWUtilityButtonView.m in Sources */,
 				8950F78F19C27BCD00F44E81 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				89C460CF19B532FE001272A1 /* main.m in Sources */,
