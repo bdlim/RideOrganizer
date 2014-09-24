@@ -44,28 +44,69 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.group.friends count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"Cell";
+    
+    BLFriendsTableViewCell *cell = (BLFriendsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    // Add utility buttons
+    NSMutableArray *rightUtilityButtons = [NSMutableArray new];
+    
+    [rightUtilityButtons sw_addUtilityButtonWithColor:
+     [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
+                                                title:@"Edit"];
+    [rightUtilityButtons sw_addUtilityButtonWithColor:
+     [UIColor colorWithRed:1.0f green:0.231f blue:0.188 alpha:1.0f]
+                                                title:@"Delete"];
+    
+    cell.rightUtilityButtons = rightUtilityButtons;
+    cell.delegate = self;
     
     // Configure the cell...
     
+    BLFriend *friend = (BLFriend *)[self.group.friends objectAtIndex:indexPath.row];
+    cell.textLabel.text = friend.name;
+    
     return cell;
 }
-*/
+
+- (void)swipeableTableViewCell:(SWTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index {
+    switch (index) {
+        case 0:
+        {
+            // Edit button is pressed
+            NSLog(@"Edit Button Pressed");
+            
+//            [self performSegueWithIdentifier:@"editGroup" sender:self];
+            
+            [cell hideUtilityButtonsAnimated:YES];
+            break;
+        }
+        case 1:
+        {
+            // Delete button is pressed
+            NSIndexPath *cellIndexPath = [self.tableView indexPathForCell:cell];
+            [self.group.friends removeObjectAtIndex:cellIndexPath.row];
+            [self.tableView deleteRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            break;
+        }
+        default:
+            break;
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.

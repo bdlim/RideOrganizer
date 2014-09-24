@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLGroup.h"
+#import "BLFriendsTableViewCell.h"
 
-@interface BLFriendsTableViewController : UITableViewController
+@interface BLFriendsTableViewController : UITableViewController <SWTableViewCellDelegate>
+
+@property (nonatomic, strong) BLGroup *group;
 
 @end

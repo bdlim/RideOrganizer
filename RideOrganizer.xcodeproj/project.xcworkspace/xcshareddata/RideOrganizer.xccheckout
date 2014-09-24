@@ -10,29 +10,29 @@
 	<string>RideOrganizer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C40466B1-FE7B-4FE8-943E-E357881F7AB2</key>
+		<key>FD14E87E7A8DF6844EA2FC569BC4D99F0C4CF7A3</key>
 		<string>https://github.com/bdlim/RideOrganizer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RideOrganizer.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C40466B1-FE7B-4FE8-943E-E357881F7AB2</key>
+		<key>FD14E87E7A8DF6844EA2FC569BC4D99F0C4CF7A3</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/bdlim/RideOrganizer.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C40466B1-FE7B-4FE8-943E-E357881F7AB2</string>
+	<string>FD14E87E7A8DF6844EA2FC569BC4D99F0C4CF7A3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C40466B1-FE7B-4FE8-943E-E357881F7AB2</string>
+			<string>FD14E87E7A8DF6844EA2FC569BC4D99F0C4CF7A3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RideOrganizer</string>
 		</dict>

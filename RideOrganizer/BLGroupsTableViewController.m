@@ -35,8 +35,8 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated{
-    self.sharedGroupManager = [BLGroupManager sharedGroups];
     [super viewDidAppear:animated];
+    self.sharedGroupManager = [BLGroupManager sharedGroups];
     [self.tableView reloadData];
 }
 
@@ -82,8 +82,7 @@
     
     // Configure the cell...
     
-    BLGroupManager *sharedGroupManager = [BLGroupManager sharedGroups];
-    BLGroup *group = (BLGroup *)[sharedGroupManager.groups objectAtIndex:indexPath.row];
+    BLGroup *group = (BLGroup *)[self.sharedGroupManager.groups objectAtIndex:indexPath.row];
     cell.textLabel.text = group.groupName;
     
     return cell;

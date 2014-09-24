@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="E0H-Ql-2y0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="E0H-Ql-2y0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller - MapView-->
+        <!--MapView-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
                 <viewController title="MapView" id="CZ4-MO-1fc" customClass="BLMapViewController" sceneMemberID="viewController">
@@ -30,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="315" y="498"/>
         </scene>
-        <!--New Group View Controller - NewGroup-->
+        <!--NewGroup-->
         <scene sceneID="jcP-EX-LAV">
             <objects>
                 <viewController title="NewGroup" id="tl6-lX-2bh" customClass="BLNewGroupViewController" sceneMemberID="viewController">
@@ -44,13 +45,11 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Group Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-5Y-gzW">
                                 <rect key="frame" x="20" y="142" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3q-TV-HBc">
-                                <rect key="frame" x="123" y="189" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="123" y="208" width="75" height="30"/>
                                 <state key="normal" title="Add Group">
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,7 +70,55 @@
             </objects>
             <point key="canvasLocation" x="734" y="-220"/>
         </scene>
-        <!--Groups Table View Controller - GroupsView-->
+        <!--NewFriend-->
+        <scene sceneID="hCy-kB-h1j">
+            <objects>
+                <viewController title="NewFriend" id="NnZ-Ex-kps" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JdR-Fd-sFf"/>
+                        <viewControllerLayoutGuide type="bottom" id="sGR-lR-2oQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wh1-FL-5wp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="20D-8w-Zh9">
+                                <rect key="frame" x="20" y="85" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Status" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TrZ-Ae-XnU">
+                                <rect key="frame" x="20" y="130" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="57J-sH-oTo">
+                                <rect key="frame" x="20" y="178" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnk-TF-Zb2">
+                                <rect key="frame" x="114" y="269" width="92" height="30"/>
+                                <state key="normal" title="Add Friend">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-Y1-E5H">
+                                <rect key="frame" x="20" y="224" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Friend" id="NqM-6P-h2T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Oe-dQ-s9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="-220"/>
+        </scene>
+        <!--GroupsView-->
         <scene sceneID="Wl2-vR-SnB">
             <objects>
                 <tableViewController title="GroupsView" id="Xvm-Sg-khh" customClass="BLGroupsTableViewController" sceneMemberID="viewController">
@@ -109,7 +156,7 @@
             </objects>
             <point key="canvasLocation" x="734" y="498"/>
         </scene>
-        <!--Friends Table View Controller - FriendsView-->
+        <!--FriendsView-->
         <scene sceneID="na5-Vj-AOf">
             <objects>
                 <tableViewController title="FriendsView" id="Hcx-JF-dfm" customClass="BLFriendsTableViewController" sceneMemberID="viewController">
@@ -132,13 +179,19 @@
                             <outlet property="delegate" destination="Hcx-JF-dfm" id="EyO-6l-O0G"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Friends" id="bqL-x5-OpR"/>
+                    <navigationItem key="navigationItem" title="Friends" id="bqL-x5-OpR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Pnm-D2-Lic">
+                            <connections>
+                                <segue destination="NnZ-Ex-kps" kind="push" id="2LK-Il-USV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVg-DZ-tZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1201" y="498"/>
         </scene>
-        <!--Navigation Controller - Map View-->
+        <!--Map View-->
         <scene sceneID="g4L-CV-Dgy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E0H-Ql-2y0" sceneMemberID="viewController">

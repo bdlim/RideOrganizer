@@ -24,6 +24,7 @@
 		8948890A19C3AD0500FAD773 /* BLGroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948890919C3AD0500FAD773 /* BLGroupManager.m */; };
 		8948890D19C3B7B000FAD773 /* BLFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948890C19C3B7B000FAD773 /* BLFriendsTableViewController.m */; };
 		8948891019C3B81500FAD773 /* BLFriendsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948890F19C3B81500FAD773 /* BLFriendsTableViewCell.m */; };
+		8948891319C3C77100FAD773 /* BLNewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8948891219C3C77100FAD773 /* BLNewFriendViewController.m */; };
 		8950F78B19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78019C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m */; };
 		8950F78C19C27BCD00F44E81 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78219C27BCD00F44E81 /* SWCellScrollView.m */; };
 		8950F78D19C27BCD00F44E81 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8950F78419C27BCD00F44E81 /* SWLongPressGestureRecognizer.m */; };
@@ -83,6 +84,8 @@
 		8948890C19C3B7B000FAD773 /* BLFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLFriendsTableViewController.m; path = ../BLFriendsTableViewController.m; sourceTree = "<group>"; };
 		8948890E19C3B81500FAD773 /* BLFriendsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLFriendsTableViewCell.h; sourceTree = "<group>"; };
 		8948890F19C3B81500FAD773 /* BLFriendsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLFriendsTableViewCell.m; sourceTree = "<group>"; };
+		8948891119C3C77000FAD773 /* BLNewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLNewFriendViewController.h; path = ../BLNewFriendViewController.h; sourceTree = "<group>"; };
+		8948891219C3C77100FAD773 /* BLNewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLNewFriendViewController.m; path = ../BLNewFriendViewController.m; sourceTree = "<group>"; };
 		8950F77F19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
 		8950F78019C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
 		8950F78119C27BCD00F44E81 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				8950F79819C286C900F44E81 /* BLGroup.m */,
 				8948890B19C3B7B000FAD773 /* BLFriendsTableViewController.h */,
 				8948890C19C3B7B000FAD773 /* BLFriendsTableViewController.m */,
+				8948891119C3C77000FAD773 /* BLNewFriendViewController.h */,
+				8948891219C3C77100FAD773 /* BLNewFriendViewController.m */,
 				8948890E19C3B81500FAD773 /* BLFriendsTableViewCell.h */,
 				8948890F19C3B81500FAD773 /* BLFriendsTableViewCell.m */,
 				8950F79419C2802700F44E81 /* BLFriend.h */,
@@ -390,6 +395,7 @@
 				8950F78E19C27BCD00F44E81 /* SWTableViewCell.m in Sources */,
 				8950F78D19C27BCD00F44E81 /* SWLongPressGestureRecognizer.m in Sources */,
 				8948890A19C3AD0500FAD773 /* BLGroupManager.m in Sources */,
+				8948891319C3C77100FAD773 /* BLNewFriendViewController.m in Sources */,
 				8950F79619C2802700F44E81 /* BLFriend.m in Sources */,
 				8950F79319C27C5800F44E81 /* BLGroupsTableViewCell.m in Sources */,
 				8950F78B19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m in Sources */,
