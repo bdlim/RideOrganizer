@@ -49,6 +49,7 @@
 		89C460EF19B532FE001272A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C460ED19B532FE001272A1 /* InfoPlist.strings */; };
 		89C460F119B532FE001272A1 /* RideOrganizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C460F019B532FE001272A1 /* RideOrganizerTests.m */; };
 		89C460FB19B5352B001272A1 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C460FA19B5352B001272A1 /* GoogleMaps.framework */; };
+		89DB24DA19D29BDA008B7A1C /* RideOrganizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89DB24D819D29BDA008B7A1C /* RideOrganizer.xcdatamodeld */; };
 		89FB219119C2BC7B00DDD72A /* BLNewGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +125,7 @@
 		89C460EE19B532FE001272A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89C460F019B532FE001272A1 /* RideOrganizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideOrganizerTests.m; sourceTree = "<group>"; };
 		89C460FA19B5352B001272A1 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		89DB24D919D29BDA008B7A1C /* RideOrganizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RideOrganizer.xcdatamodel; sourceTree = "<group>"; };
 		89FB218F19C2BC7B00DDD72A /* BLNewGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLNewGroupViewController.h; path = ../BLNewGroupViewController.h; sourceTree = "<group>"; };
 		89FB219019C2BC7B00DDD72A /* BLNewGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLNewGroupViewController.m; path = ../BLNewGroupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				89C460D419B532FE001272A1 /* Main.storyboard */,
+				89DB24D819D29BDA008B7A1C /* RideOrganizer.xcdatamodeld */,
 				8950F77E19C27BCD00F44E81 /* SWTableViewCell */,
 				89C460D119B532FE001272A1 /* BLAppDelegate.h */,
 				89C460D219B532FE001272A1 /* BLAppDelegate.m */,
@@ -401,6 +404,7 @@
 				8950F78B19C27BCD00F44E81 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				8943E0DF19BA84980078DEF1 /* BLGroupsTableViewController.m in Sources */,
 				8948890D19C3B7B000FAD773 /* BLFriendsTableViewController.m in Sources */,
+				89DB24DA19D29BDA008B7A1C /* RideOrganizer.xcdatamodeld in Sources */,
 				8948891019C3B81500FAD773 /* BLFriendsTableViewCell.m in Sources */,
 				8950F78C19C27BCD00F44E81 /* SWCellScrollView.m in Sources */,
 				89C460D919B532FE001272A1 /* BLMapViewController.m in Sources */,
@@ -635,6 +639,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89DB24D819D29BDA008B7A1C /* RideOrganizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89DB24D919D29BDA008B7A1C /* RideOrganizer.xcdatamodel */,
+			);
+			currentVersion = 89DB24D919D29BDA008B7A1C /* RideOrganizer.xcdatamodel */;
+			name = RideOrganizer.xcdatamodeld;
+			path = ../RideOrganizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89C460B719B532FE001272A1 /* Project object */;
 }
